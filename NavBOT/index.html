@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAVBot - Senior Capstone Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="project-detail">
+      <h1>NAVBot</h1>
+      <p class="date">Senior Capstone</p>
+      <ul>
+        <li>Implemented semantic segmentation using DeepLabv3+ with custom training on Texas A&M campus dataset.</li>
+        <li>Programmed a Teensy 4.1 via Arduino IDE to interface with onboard sensors and peripherals.</li>
+        <li>Teensy receives steering commands from a Jetson Orin over USB UART and controls servos via RS-485.</li>
+        <li>GPS data is acquired using TinyGPS++ and processed for real-time localization.</li>
+        <li>System includes IMU (BNO08x), thermistor-based fan control (PWM), and temperature monitoring via STTS22H.</li>
+        <li>Developed UART-based command protocol for controlling components like fan speed and servo position.</li>
+        <li>Handled all sensor communication (IMU, GPS, temp sensor) over I2C and UART buses.</li>
+      </ul>
+
+      <!-- Video embed here -->
+      <video autoplay muted loop playsinline width="600" class="my-video">
+        <source src="assembly.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+      </video>
+
+      <a href="../index.html" class="btn-return">← Return to Main Page</a>
+
+
+    </section>
+  </main>
+</body>
+</html>
