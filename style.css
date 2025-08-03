@@ -2,54 +2,65 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to right, #f0f4ff, #e0ecff);
-  color: #1f2a38;
+  background: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
 }
 
 .container {
   max-width: 800px;
-  margin: 4rem auto;
-  padding: 0 1rem;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-header {
+.hero {
   text-align: center;
-  margin-bottom: 3rem;
+  padding: 3rem 0;
 }
 
-header h1 {
+.hero h1 {
   font-size: 3rem;
-  margin-bottom: 0.2rem;
-  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
 }
 
-header p {
-  margin: 0.3rem 0;
-  font-weight: 400;
-  color: #555;
-}
-
-.card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h2 {
-  font-size: 1.8rem;
+.tagline {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #475569;
   margin-bottom: 1rem;
-  color: #2c3e50;
+}
+
+.projects, .contact {
+  margin-top: 4rem;
+}
+
+.projects h2, .contact h2 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+}
+
+.project-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 a {
-  color: #0066cc;
+  color: #2563eb;
   text-decoration: none;
 }
 
