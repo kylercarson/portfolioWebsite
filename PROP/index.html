@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P.R.O.P. Project - MXET 375 & ESET 349</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      width: 49%;
+      height: auto;
+    }
+
+    .small-center-image {
+      display: block;
+      margin: 20px auto;
+      width: 300px;
+      height: auto;
+    }
+
+    .center-image {
+      display: block;
+      margin: 20px auto;
+      width: 80%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="project-detail">
+      <h1>P.R.O.P. Project</h1>
+      <p class="date">MXET 375 Applied Dynamic Systems & ESET 349 Microcontroller Architecture</p>
+      <ul>
+        <li>Developed ARM 7 Assembly code to drive a DC motor, disconnect the battery at steady state, and short the motor to induce rapid deceleration via back-EMF, causing motor deceleration and threaded release of propeller.</li>
+        <li>Utilized ARM 7 Assembly to enable a timer on the microcontroller for controlling a hobby servo motor, which rotated a control knob to adjust the input voltage of the system.</li>
+        <li>Modeled and simulated the electromechanical dynamic system in <strong>Simulink</strong>, integrating rotational and translational equations of motion.</li>
+        <li>Designed a thread-based launch system in <strong>Fusion 360</strong>, enabling secure coupling and timed release of the propeller.</li>
+        <li>Performed experimental validation of system dynamics, achieving close correlation between simulated and measured heights at different voltages.</li>
+        <li>Collaborated with teammates: <strong>Caleb Martin and Siddharth Ganti</strong>.</li>
+        <li>View the detailed project report <a href="https://github.com/kylercarson/PROP/blob/master/MXET375%20-%20Project%20Report%20Template.docx" target="_blank">here</a>.</li>
+      </ul>
+
+      <!-- Links to Assembly Code -->
+      <h2>Assembly Code (.txt files)</h2>
+      <ul>
+        <li><a href="https://github.com/kylercarson/PROP/blob/master/Project%20-%20PROP-and-Servo.txt" target="_blank">Project - PROP-and-Servo.txt (ARM Assembly)</a></li>
+      </ul>
+
+      <div class="image-row">
+        <img src="cad.png" alt="CAD Model" />
+        <img src="physical.png" alt="Physical Model" />
+      </div>
+
+      <img src="launch.png" alt="Launch System" class="small-center-image" />
+
+      <img src="simulink.png" alt="Simulink Model" class="center-image" />
+      <img src="plot.png" alt="Results Plot" class="center-image" />
+
+      <a href="../index.html" class="btn-return">← Return to Main Page</a>
+    </section>
+  </main>
+</body>
+</html>
