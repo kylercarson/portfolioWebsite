@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpiderCAT Project</title>
+  <link rel="stylesheet" href="style.css" />
+
+    <style>
+    .video-collage-container {
+      position: relative;
+      width: 600px;   /* adjust size as needed */
+      height: 400px;
+      margin: 40px auto;
+      background: #fff;
+    }
+    .video-corner {
+      position: absolute;
+      width: 180px;
+      height: 110px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .corner-tl { top: 0; left: 0; }
+    .corner-tr { top: 0; right: 0; }
+    .corner-bl { bottom: 0; left: 0; }
+    .corner-br { bottom: 0; right: 0; }
+    .video-center {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 260px;
+      height: 160px;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+      z-index: 2;
+      overflow: hidden;
+      background: #222;
+    }
+    @media (max-width: 700px) {
+      .video-collage-container { width: 98vw; height: 300px;}
+      .video-corner { width: 90px; height: 55px;}
+      .video-center { width: 130px; height: 80px;}
+    }
+  </style>
+
+</head>
+<body>
+  <main class="container">
+    <section class="project-detail">
+      <h1>SpiderCAT</h1>
+      <p class="date">Beckhoff Automation Intern Project</p>
+      <ul>
+        <li>Designed and implemented a <strong>Spidercam-style system</strong> ("SpiderCAT") leveraging <strong>Beckhoff Automation</strong> hardware and TwinCAT, as an interactive demo for trade shows and customer events.</li>
+        <li>Integrated Beckhoff’s motion control libraries to coordinate a multi-axis cable-driven end effector, allowing precise movement throughout a 3D space.</li>
+        <li>Programmed logic to map “checkpoint” positions to represent major Beckhoff US office locations, creating a gamified user experience where checkpoints became part of an educational interactive game.</li>
+        <li>Implemented an <strong>Xbox controller interface</strong> where users press the A button to automatically jog the end effector to each checkpoint, using action files for rapid, modular configuration of the game's setup process.</li>
+        <li>Tested and tuned system safety, end effector stability, and user interface experience to ensure reliability and engagement during continuous trade show use.</li>
+        <li>Collaborated closely with the Beckhoff US team to align demo features with company branding and messaging.</li>
+        <li>Collaborated with fellow intern <strong>Orion Kraus</strong> throughout development.</li>
+      </ul>
+
+
+      <!-- Links to Assembly Code -->
+      <h2>Project Files</h2>
+      <ul>
+        <li><a href="https://github.com/kylercarson/SpiderCAT"target="_blank">Project - SpiderCAT</a></li>
+      </ul>
+
+      <!-- Video embed -->
+      <video autoplay muted loop playsinline width="600" class="my-video">
+        <source src="SpiderCATMovie.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Video Collage Layout -->
+    <div class="video-collage-container">
+      <div class="video-corner corner-tl">
+        <video src="topLeft.mp4" autoplay muted loop playsinline poster="thumb1.jpg" width="100%" height="100%"></video>
+      </div>
+      <div class="video-corner corner-tr">
+        <video src="topRight.mp4" autoplay muted loop playsinline poster="thumb2.jpg" width="100%" height="100%"></video>
+      </div>
+      <div class="video-corner corner-bl">
+        <video src="botLeft.mp4" autoplay muted loop playsinline poster="thumb3.jpg" width="100%" height="100%"></video>
+      </div>
+      <div class="video-corner corner-br">
+        <video src="botRight.mp4" autoplay muted loop playsinline poster="thumb4.jpg" width="100%" height="100%"></video>
+      </div>
+      <div class="video-center">
+        <video src="eeffer.mp4" autoplay muted loop playsinline poster="center-thumb.jpg" width="100%" height="100%"></video>
+      </div>
+    </div>
+
+
+      <a href="../index.html" class="btn-return">← Return to Main Page</a>
+    </section>
+  </main>
+</body>
+</html>
