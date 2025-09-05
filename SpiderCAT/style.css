@@ -128,15 +128,54 @@ a.back-link:hover {
   background-color: #005fa3;
 }
 
-.video-row {
-  display: flex;
-  justify-content: center; /* Centers videos horizontally */
-  gap: 10px; /* Optional: space between videos */
-  flex-wrap: wrap; /* Wrap to next line on small screens */
-  margin: 20px 0;
+
+/* Collage layout */
+.video-collage-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;  /* adjust overall size */
+  margin: 40px auto;
+  aspect-ratio: 1/1; /* keep it square */
 }
 
-.side-video {
-  width: 300px; /* half of original 600px */
-  height: auto; /* maintain aspect ratio */
+/* All corners */
+.video-corner {
+  position: absolute;
+  width: 40%;   /* make corners bigger (default 30–35% is common) */
+  height: 40%;
+  overflow: hidden;
+}
+
+.video-corner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Place corners */
+.corner-tl { top: -10%; left: 0; }
+.corner-tr { top: -10%; right: 0; }
+.corner-bl { bottom: -10%; left: 0; }
+.corner-br { bottom: -10%; right: 0; }
+
+/* Center video */
+.video-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;   /* bigger center */
+  height: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.video-center video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transform: scale(1.4) translateY(-10%);
+  transform-origin: center center;
+
 }
